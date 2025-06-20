@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations().then(regs => {
-        for (const reg of regs) {
-          reg.unregister();
-        }
-      });
-    }
-  </script>
-
-  <!-- Prevent all caching -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-  <meta http-equiv="Pragma" content="no-cache"/>
-  <meta http-equiv="Expires" content="0"/>
-
   <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
